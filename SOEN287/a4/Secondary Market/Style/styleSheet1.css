@@ -1,0 +1,58 @@
+div.container{
+	width:100%;
+	border:1px solid gray;
+	background-image:url("http://www.awwwards.com/awards/images/2015/04/pattern.jpg");
+}
+
+
+div.header{
+	width:100%;
+	height:100px;
+	padding:50px;
+	color:white;
+	text-shadow;
+	background-color:black;
+	text-align:center;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+div.footer{
+	width:100%;
+	padding:20px;
+	color:white;
+	text-shadow;
+	background-color:black;
+	text-align:center;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+	
+nav{
+	float:left;
+	max-width:30%;
+	margin:0;
+	padding:5px;
+	padding-bottom:10px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:20px;
+	position:fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+	margin-left:250px;
+	border-left:1px solid grey;
+	padding:5px;
+	padding-left:20px;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	color:black;
+	font-size:25px;
+}

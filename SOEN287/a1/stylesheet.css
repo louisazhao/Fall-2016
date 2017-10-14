@@ -1,0 +1,34 @@
+
+#container1{
+	position:relative;
+	color:red;
+	padding:5px;
+	width:200px;
+	height:200px;
+	border:2px;
+	border-color:green;
+	border-style:dotted;
+	text-align:center;
+}
+	
+#container2{
+	position:absolute;
+	top:100px;
+	left:100px;
+	color:black;
+	padding:5px;
+	width:200px;
+	height:200px;
+	border:2px;
+	border-color:green;
+	border-style:dotted;
+	text-align:center;
+}
+
+
+	
+
+
+
+
+

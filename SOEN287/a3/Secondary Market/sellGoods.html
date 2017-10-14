@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Have something to sell</title>
+<link rel="stylesheet" type="text/css" href="style/styleSheet2.css">
+<script src="javascript/javascript1.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+   <h1>Louisa's Secondary Market
+   <a href="index.html">
+    <img src="image/logo.png"
+	         alt="Logo of Louisa's secondary market"
+			 width="50px" height="50px">
+   </a>
+   </h1>
+   <p id="time_span"></p>
+  </header>
+  
+ <nav>
+    <ul>
+	   <li><a href="index.html">Home Page</a></li>
+	   <li><a href="browseGoods.html">Browse Available Goods</a></li>
+	   <li><a href="sellGoods.html">Have something to sell</a></li>
+	   <li><a href="contactUs.html">Contact US</a></li>
+	</ul>
+</nav>
+
+<article>
+  <h3>Having something to sell? Please complete the following fields:</h3>
+  <form name="myForm">
+     <p></p>
+     <table>
+	    <tr>
+		    <td>Please enter your name:</td>
+			<td>
+			    <label>First name</label>
+				<input type="text" name="firstName">
+		    </td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td>
+		    <label>Last name</label>
+				<input type="text" name="lastName">
+		    </td>
+		</tr>
+   
+        <tr>
+            <td>Email address:</td>
+            <td colspan="2">
+                <input type="text" name="email">
+           </td>
+        </tr>		
+  
+        <tr>
+		    <td>Classification of the goods:</td>
+			<td>
+			   <select name="Classification">
+			       <option value="Electronic appliance">Electronic appliance</option>
+				   <option value="Women's clothes">Women's clothes</option>
+				   <option value="Men's clothes">Men's clothes</option>
+				   <option value="children's clothes">Children's clothes</option>
+				   <option value="Funiture">Furniture</option>
+				   <option value="Cellphone">Cellphone</option>
+				   <option value="Computer">Computer&Laptop</option>
+			   </select>
+			</td>
+		</tr>
+		
+		<tr>
+		    <td>The price that you want to sell for:</td>
+			<td colspan="2">
+			   <input type="text" name="price">
+		    </td>
+		</tr>
+		
+		<tr>
+		   <td>Please choose your location:</td>
+		   <td>
+		       <select name="location">
+			       <option value="Ahuntsic-Cartierville">Ahuntsic-Cartierville</option>
+				   <option value="Anjou">Anjou</option>
+				   <option value="CDN&NDG">CDN & NDG</option>
+				   <option value="Lachine">Lachine</option>
+				   <option value="Lasalle">Lasalle</option>
+				   <option value="Le Plateau">Le Plateau-Mont-Royal</option>
+				   <option value="Le sud-Ouest">Le Sud-Ouest</option>
+				   <option value="West Island">West Island</option>
+				   <option value="South shore">South Shore</option>
+				   <option value="Centre">Centre ville</option>
+			   </select>
+			</td>
+		</tr>
+		
+		<tr>
+		    <td colspan="3">Please describe your goods briefly: </td>
+		</tr>
+	</table>
+		
+		   <p>
+		   <textarea name="Description" placeholder="Please describe your goods briefly:"></textarea>
+	       </p>
+   
+	<p></p>
+	<input type="submit" onclick="validateForm()" value="Submit">
+	<input type="reset" value="Reset">
+	
+</form>
+</article>
+
+<footer>
+      <a href="privacy.html">Privacy/Disclaimer Statement</a>
+</footer>
+</body>
+
+</html>
+		 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<style>
+body{
+background-color: #e6ccff;}
+p{
+color:white;
+text-shadow;
+font-family:Arial;
+font-size:20px;
+font-weight:bold;
+padding:5px;
+border-bottom-color:white;
+border-bottom-style:solid;
+border-left-color:yellow;
+border-left-style:dotted;
+}
+
+
+</style>
+<title>Exercise 4</title>
+</head>
+
+<body>
+<form action="">
+<p>
+<label> User's name:
+<input type="text" name="name" size="30"/> </label>
+<br/>
+</p>
+</form>
+
+<p>
+Please choose your age range:
+</p>
+<form action="">
+<p>
+<label>Age range:
+  <select name="age">
+   <option>15-25 years old</option>
+   <option>26-35 years old</option>
+   <option>36-45 years old</option>
+   <option>46-55 years old</option>
+   <option>56-65 years old</option>
+   <option>66-75 years old</option>
+  </select>
+</label>
+</form>
+
+<p>
+Marriage situation:
+</p>
+<form action="">
+ <p>
+    <label><input type="radio" name="marriage" value="Single"/> Single </label>
+	<label><input type="radio" name="marriage" value="Married"/> Married </label>
+	<label><input type="radio" name="marriage" value="Divorced"/> Divorced </label>
+	<label><input type="radio" name="marriage" value="Widow/Widower"/> Widow/Widower </label>
+</p> 
+</form>
+
+<p>
+How many children do you have?
+</p>
+<form action="">
+<p>
+<label><input type="checkbox" name="children[]" value="no child"/>
+       without child</label>
+<label><input type="checkbox" name="children[]" value="1 child"/>
+       1 child</label>
+<label><input type="checkbox" name="children[]" value="2 children"/>
+       2 children</label>
+<label><input type="checkbox" name="children[]" value="3 children"/>
+       3 children</label>
+<label><input type="checkbox" name="children[]" value="more than 3 children"/>
+       more than 3 children</label>
+</p>
+</form>
+
+
+
+
+<p>
+Please briefly introduce yourself:
+</p>
+<form action="">
+<p>
+<label><textarea name="introduction" rows="8" cols="50">
+(Be brief and concise) </textarea>
+</label>
+</p>
+</form>
+
+
+
+<form action="">
+<input type="reset" value="reset form"/>
+<input type="submit" value="submit form"/>
+</form>
+
+</body>
+</html> 

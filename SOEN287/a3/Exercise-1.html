@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 1</title>
+<script>
+function addNumbers(numbers)
+{
+var total=0;
+for(var i=0,n=numbers.length;i<n;i++)
+{
+total+=parseInt(numbers[i]);
+}
+document.getElementById("demo1").innerHTML=total;
+return total;
+}
+
+function getCurrentDate()
+{
+var d=new Date();
+var week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+var ww=week[d.getDay()];
+var months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+var month=months[d.getMonth()];
+var day=d.getDate();
+var year=d.getFullYear();
+var display=ww+", "+month+" "+day+", "+year;
+document.getElementById("demo2").innerHTML=display;
+return display;
+}
+
+function arrayToString(words)
+{
+var whole=words.join(" ");
+document.getElementById("demo3").innerHTML=whole;
+return whole;
+}
+
+function findMaxNumber()
+{
+var pattern=/\d+/g;
+var input=document.findMax.maxInput.value;
+var strings=input.match(pattern); 
+var n=strings.length;
+var numbers=new Array(n);
+for(var i=0;i<n;i++)
+{
+numbers[i]=parseInt(strings[i]);
+}
+var max=numbers[0];
+for(var i=0;i<n;i++)
+{
+if(numbers[i]>max)
+{max=numbers[i];}
+}
+document.getElementById("demo4").innerHTML=max;
+return max;
+}
+
+function getDigits(s)
+{
+var pattern=/\d+/g;
+var matches=s.match(pattern);
+var result=matches.join("");
+document.getElementById("demo5").innerHTML=result;
+return result;
+}
+
+
+function reverseString(s)
+{
+var reverse=s.split("").reverse().join("");
+document.getElementById("demo6").innerHTML=reverse;
+}
+</script>
+</head>
+<body>
+
+<h2>A. function addNumbers</h2>
+<form name="add">
+<p>Enter your numbers, using comma or space as delimiter:</p>
+<input type="text" name="numberInput"/>
+</form>
+<p>Sum of these number is:</p>
+<p id="demo1"></p>
+<button type="button" onclick="addNumbers(document.add.numberInput.value.match(/\d+/g))">Click to add</button>
+
+<h2>B. function getCurrentDate</h2>
+<p id="demo2"></p>
+<button type="button" onclick="getCurrentDate()">Click to see current date</button>
+
+<h2>C. function arrayToString</h2>
+<form name="addwords">
+<p>Enter your words, using comma as delimiter:</p>
+<input type="text" name="wordInput"/>
+</form>
+<p id="demo3"></p>
+<button type="button" onclick="arrayToString(document.addwords.wordInput.value.match(/\w+/g))">Click to see the whole setence</button>
+
+<h2>D. function findMaxNumber</h2>
+<form name="findMax">
+<p>Enter some numbers,using comma or space as delimiter, and I will find the max number among them:</p>
+<input type="text" name="maxInput"/>
+<p>The max number is:</p>
+<p id="demo4"></p>
+<button type="button" id="scan" onclick="findMaxNumber()">Click to find max</button>
+</form>
+ 
+<h2>E. function getDigits</h2>
+<form name="findDigit">
+<p><label>Enter the string that you want to scan:
+         <input type="text" name="input"/>
+   </label>
+</p>
+<p>Here are the digits in the string:</p>
+<p id="demo5"></p>
+<button type="button" id="scan" onclick="getDigits(document.findDigit.input.value)">Click to scan the string</button>
+</form>
+
+<h2>F. function reverseString</h2>
+<form name="reverse">
+<p>Enter the sentence that you want to reverse:</p>
+<input type="text" name="setenceInput"/>
+</form>
+<p>Here is the reverse version:</p>
+<p id="demo6"></p>
+<button type="button" onclick="reverseString(document.reverse.setenceInput.value)">Click to see the reverse setence</button>
+</body>
+</html>

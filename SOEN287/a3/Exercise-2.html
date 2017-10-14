@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 2</title>
+<script>
+function convert()
+{
+var input=myForm.temperature.value;
+var value1;
+var value2;
+var output;
+if (myForm.measurement.value=="C")
+{
+value1=input*9/5+32;
+value2=input*1+273.15;
+output=value1+"F = "+value2+"K";
+myForm.result.value=output;
+}
+else if(myForm.measurement.value=="F")
+{
+value1=(input-32)*5/9;
+value2=(input-32)*5/9+273.15;
+output=value1+"C = "+value2+"K";
+myForm.result.value=output;
+}
+else
+{
+value1=((input-273.15)*9/5+32).toFixed(2); 
+value2=(input-273.15).toFixed(2);
+output=value1+"F = "+value2+"C";
+myForm.result.value=output;
+}
+}
+</script>
+</head>
+
+<body>
+<h2>Temperature Converter</h2>
+<h4>Celsius:"C" Fahrenheit:"F" Kelvin:"K"</h4>
+<form name="myForm">
+   <p>
+   <label>Temperature
+        <input type="text" name="temperature" size="30pi"/>
+        <select name="measurement">
+            <option value="C">C</option>
+            <option value="F">F</option>
+            <option value="K">K</option>
+        </select>
+    </label></p>
+	<p>
+    <label>Result
+        <input type="text" name="result" size="30pi"/>
+		<button type="button" onclick="convert()">Convert</button>
+	</label></p>
+</form>
+</body>
+</html>
