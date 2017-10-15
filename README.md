@@ -1,2 +1,2 @@
 # Fall-2016
-assignment for COMP 249 and SOEN 287
+Assignment for COMP 249 (OOP-2) and SOEN 287 (Web programming)
